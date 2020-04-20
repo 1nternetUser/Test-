@@ -23,18 +23,18 @@
 	    <b><u>HP Formula:</b></u>
 	    <hr>
 	    <script src="script.js"></script>
+	    <form action="/action_page.php" onsubmit="return myFunction()">
+		    Level (max 100): <input type="text" id="hp" size="20" name="hp"><br>
+		    <input type="submit" value="Submit"> 
+	    </form>
+	
 	    <script>
-		    //function that display value 
-		    function dis(val) 
-		    { 
-			    document.getElementById("result").value+=val 
-		    } 
-		    //function that evaluates the digit and return result 
-		    function solve() 
-		    { 
-			    let x = document.getElementById("result").value 
-			    let y = eval(x) 
-			    document.getElementById("result").value = y 
+		    function myFunction() 
+		    {
+			    var hp = document.getElementById("hp").value;
+			    submitOK = "true";
+			    var bHP = 100 + (50+hp);
+			    document.getElementById("hp").innerHTML = bHP;
 		    }
 	    </script>
 
