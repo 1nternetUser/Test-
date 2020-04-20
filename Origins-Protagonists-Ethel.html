@@ -23,9 +23,9 @@
 	    <b><u>HP Formula:</b></u>
 	    <hr>
 	    <form name="formcalcHP">
-		    Level Number: <input type="text" name="txtnum1">
+		    Level Number:	<input type="text" name="txtnum1">
 		    <br>
-		    Base HP: <input type="text" name="txtres">
+		    Base Health:	<input type="text" name="txtres">
 		    <br>
 		    <input type="button" value="Calculate" onClick="sumValues()">
 	    </form>
@@ -42,18 +42,18 @@
     	<b><u>Melee Formula:</u></b>
 	    <hr>
 	    <form name="formcalcMelee">
-		    Level Number: <input type="text" name="txtnum1">
+		    Level Number: 	<input type="text" name="txtnum1">
 		    <br>
-		    Base Melee Damage: <input type="text" name="txtres">
+		    Base Melee Damage: 	<input type="text" name="txtres">
 		    <br>
 		    <input type="button" value="Calculate" onClick="sumValues()">
 	    </form>
 	    <script type="text/javascript">
 		    <function sumValues()
 		    {
-			    var n1, res;
+			    var m1, res;
 			    n1=Number(document.formcalcMelee.txtnum1.value);
-			    res=10+(10*n1);
+			    res=10+(10*m1);
 			    document.formcalcMelee.txtres.value=re;
 		    }
 	    </script>
