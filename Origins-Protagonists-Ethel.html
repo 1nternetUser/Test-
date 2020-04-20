@@ -24,17 +24,20 @@
 	    <hr>
 	    <script src="script.js"></script>
 	    <script>
-
-		    function calculate()
-		    {
-			    var A = document.getElementById("a").value;
-			    var ans = 100+(50*A);
-			    document.formcalcHP.txtres.value=re;
-			    alert(ans);
+		    //function that display value 
+		    function dis(val) 
+		    { 
+			    document.getElementById("result").value+=val 
+		    } 
+		    //function that evaluates the digit and return result 
+		    function solve() 
+		    { 
+			    let x = document.getElementById("result").value 
+			    let y = eval(x) 
+			    document.getElementById("result").value = y 
 		    }
 	    </script>
-	        <input type='number' id='a'/>
-    		<button onClick='calculate()'>calculate</button>
+
     <section id="MeleeFormula">
     	<b><u>Melee Formula:</u></b>
 	    <hr>
